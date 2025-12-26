@@ -22,11 +22,17 @@ A modern ride-hailing application built with Flutter, featuring real-time driver
 |:---:|:---:|:---:|
 | Map with pickup location | Live driver movement | Payment details |
 
+
 ## 🏗️ Architecture
 
 This project follows the **MVVM (Model-View-ViewModel)** architecture pattern:
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2025-12-27 at 01 17 42" src="https://github.com/user-attachments/assets/cd542a81-e6e0-4eea-a678-08b938456160" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2025-12-27 at 01 17 50" src="https://github.com/user-attachments/assets/07055920-cbd7-4f94-a3b1-22d617c53452" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2025-12-27 at 01 17 57" src="https://github.com/user-attachments/assets/c9a1af7c-5de4-453e-bb8f-acbc836352cb" />
 
 ```
+
+
 lib/
 ├── core/
 │   └── constants/          # App-wide constants
