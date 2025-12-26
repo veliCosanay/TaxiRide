@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'views/ride_screen.dart';
-import 'viewmodels/ride_viewmodel.dart';
+import 'presentation/views/ride_screen.dart';
+import 'presentation/viewmodels/ride_viewmodel.dart';
+import 'core/constants/app_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,19 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Instantiate the ViewModel here (or using a DI container/Provider in larger apps)
     final rideViewModel = RideViewModel();
 
     return MaterialApp(
-      title: 'Taxi Ride Example',
+      title: 'Taxi Ride',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.amber,
-          brightness: Brightness.dark, // Dark theme as per design
+          seedColor: AppColors.primary,
+          brightness: Brightness.dark,
         ),
         useMaterial3: true,
-        scaffoldBackgroundColor: Colors.black, // Ensure background is black
+        scaffoldBackgroundColor: AppColors.background,
       ),
       home: RideScreen(viewModel: rideViewModel),
     );
